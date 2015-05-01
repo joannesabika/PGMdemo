@@ -1,15 +1,19 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="comment_comment" id="2" x="194" y="56">
-    <field name="TEXT">UULLRRDDLLRR</field>
+  <block type="movement_forward" id="41" x="202" y="36">
     <next>
-      <block type="robot_delay" id="4" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="11">
-            <field name="NUM">500</field>
-          </block>
-        </value>
+      <block type="comment_comment" id="2">
+        <field name="TEXT">UULLRRDDLLRR</field>
         <next>
-          <block type="movement_stop" id="21"></block>
+          <block type="robot_delay" id="4" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="11">
+                <field name="NUM">500</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="21"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
