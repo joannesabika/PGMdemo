@@ -1,17 +1,57 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="41" x="202" y="36">
     <next>
-      <block type="comment_comment" id="2">
-        <field name="TEXT">UULLRRDDLLRR</field>
+      <block type="robot_delay" id="4" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="11">
+            <field name="NUM">500</field>
+          </block>
+        </value>
         <next>
-          <block type="robot_delay" id="4" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="11">
-                <field name="NUM">500</field>
-              </block>
-            </value>
+          <block type="movement_left" id="51">
             <next>
-              <block type="movement_stop" id="21"></block>
+              <block type="robot_delay" id="52" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="53">
+                    <field name="NUM">500</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_right" id="63">
+                    <next>
+                      <block type="robot_delay" id="64" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="65">
+                            <field name="NUM">500</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_reverse" id="75">
+                            <next>
+                              <block type="robot_delay" id="76" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="77">
+                                    <field name="NUM">500</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="21">
+                                    <next>
+                                      <block type="comment_comment" id="2">
+                                        <field name="TEXT">UULLRRDDLLRR</field>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
